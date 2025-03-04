@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="ekszer.css">
 </head>
 <body>
-    
+    <header>
+        <div id="fejléc">
+            <div id="fejléc1">
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Összes<span></span></a>
+                    <a href="#">Nyakláncok<span></span></a>
+                    <a href="#">Karkötők<span></span></a>
+                    <a href="#">Füllbevalók</a>
+                </div>
+                <button class="openbtn" onclick="openNav()">&#9776;</button>
+                <h1 id="cím">Ice Kingdom</h1>
+                <i class="fa fa-shopping-basket" style="font-size:48px;color:red"></i>
+            </div>
+        </div>
+    </header>
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "100%";
+          }
+         
+          /* Close when someone clicks on the "x" symbol inside the overlay */
+          function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0%";
+          }
+    </script>
 </body>
 </html>
