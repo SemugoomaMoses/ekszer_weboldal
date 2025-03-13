@@ -3,13 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Megrendel</title>
-    <script src="index.js" ></script>
     <link rel="stylesheet" href="megrendel.css">
+    <title>Megrendelés</title>
 </head>
 <body>
-    <div id="termek">
-        <h1 id="szöveg"></h1>
-    </div>
+
+    <h1 id="text2"></h1>
+    
+    
+    <!-- Kép, amit a JS állít be -->
+    <img id="image" src="" alt="Választott karkötő" width="300">
+    
+    <!-- Szöveg, amit a JS állít be -->
+    <p id="text"></p>
+    <p id="text2"></p>
+    <p id="text3"></p>
+
+    <script>
+        // URL paraméterek kiolvasása
+        // Function to get URL parameters
+function getQueryParams() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return {
+        image: urlParams.get('image'),
+        text: urlParams.get('text'),
+        text2: urlParams.get('text2'),
+        text3: urlParams.get('text3'),
+    };
+}
+
+// Load the image and text based on the query parameters
+const params = getQueryParams();
+const image = params.image;
+const text = params.text;
+const text2 = params.text2;
+const text3 = params.text3;
+
+if (image) {
+    document.getElementById('image').src = image;
+}
+
+if (text) {
+    document.getElementById('text').textContent = text;  // Első szöveg megjelenítése
+}
+
+if (text2) {
+    document.getElementById('text2').textContent = text2;  // Második szöveg megjelenítése
+}
+if (text3) {
+    document.getElementById('text3').textContent = text3;  // Második szöveg megjelenítése
+}
+
+    </script>
+
 </body>
 </html>

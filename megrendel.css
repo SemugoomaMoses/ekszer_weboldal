@@ -1,0 +1,12 @@
+#image{
+    float: left;
+    margin-left: 50px;
+    width: 600px;
+}
+
+#text{
+    font-weight: bold;
+}
+#text2{
+    margin-left: 750px;
+}
