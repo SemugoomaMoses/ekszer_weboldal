@@ -8,5 +8,6 @@
     font-weight: bold;
 }
 #text2{
-    margin-left: 750px;
+    float: right;
+    margin-right: 550px;
 }
