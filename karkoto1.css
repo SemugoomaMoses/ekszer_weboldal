@@ -241,3 +241,14 @@
     visibility: visible;
     margin: 20px 20px 20px 20px;
   }
+  
+  @media (max-width: 700px) and (min-width: 350px){
+    #kep{
+      width: 100%;
+      height: auto;
+    }
+    #szoveg{
+      float: none;
+      margin-right: 0px;
+    }
+  }
