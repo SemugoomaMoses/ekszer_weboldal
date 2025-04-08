@@ -164,39 +164,43 @@
     <div class="button-container2">
         <button class="shop-button">Összes megtekintése</button>
     </div>
+
+
     <div id="infok">
         <div id="szallitas">
             <img src="icons8-truck-50.png" alt="">
             <h1>ingyenes expressz szállítás</h1>
         </div>
-        <div id="shield">
+        <div id="shield" >
             <img src="icons8-shield-50.png" alt="">
             <h1>élettartam garancia</h1>
         </div>
-        <div>
+        <div >
             <img src="icons8-man-50.png" alt="">
             <h1>Ezrek bizalma</h1>
         </div>
-        <div>
+        <div >
             <img src="icons8-arrow-48.png" alt="">
             <h1>könnyű visszatérítés, cserék</h1>
 
-        </div>
+        </div >
         <div id="fizetes">
             <img src="icons8-money-32.png" alt="">
             <h1>Ragyogj most! fizess később</h1>
         </div>
+        
     </div>
     <div id="lablec">
         <h1>Csatlakozz az Ice Kingdom csapatához</h1>
         <p id="email_cim">E-mail:</p>
         <input type="text" id="email" name="email"><br><br>
         <div class="button-container3">
-            <button class="shop-button2">FELIRATKOZÁS</button>
+            <button class="shop-button2" onclick="subscribe()">FELIRATKOZÁS</button>
         </div>
         <div id="payment">
         <img id="payment" src="payment.PNG" alt="">
         </div>
+    </div>
     </div>
     
 
@@ -233,5 +237,17 @@
             document.getElementById("mySidepanel2").style.width = "0%";
           }
     </script>
+
+<script>
+    function subscribe() {
+        const emailInput = document.getElementById('email').value;
+        if (emailInput) {
+            alert('Sikeres feliratkozás!'); // Felugró ablak megjelenítése
+        } else {
+            alert('Kérlek, adj meg egy érvényes email címet!'); // Figyelmeztetés üres mező esetén
+        }
+    }
+</script>
+
 </body>
 </html>

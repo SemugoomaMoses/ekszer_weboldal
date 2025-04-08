@@ -251,6 +251,8 @@ margin-right: 40px;
     text-align: center;
   }
 
+  
+
 
  
  
@@ -375,4 +377,86 @@ margin-right: 40px;
   a.closebtn2, button.openbtn2{
     visibility: visible;
     margin: 20px 20px 20px 20px;
+  }
+
+  @media (max-width: 700px) and (min-width: 350px){
+    #kepek {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px; /* kényelmes távolság a dobozok között */
+    }
+  
+    #kepek > div {
+      width: 100%;
+    }
+  
+    #kepek img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    #bracelets {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px; /* kényelmes távolság a dobozok között */
+    }
+  
+    #bracelets > div {
+      width: 100%;
+    }
+  
+    #bracelets img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    #fullbevalok {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px; /* kényelmes távolság a dobozok között */
+    }
+  
+    #fullbevalok > div {
+      width: 100%;
+    }
+  
+    #fullbevalok img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    #gyuruk {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px; /* kényelmes távolság a dobozok között */
+    }
+  
+    #gyuruk > div {
+      width: 100%;
+    }
+  
+    #gyuruk img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    #infok {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 16px; /* kényelmes távolság a dobozok között */
+    }
+    #infok > div {
+      width: 100%;
+    }
+    #infok img{
+      width: 20%;
+      height: auto;
+      display: block;
+    }
+
+
+
   }

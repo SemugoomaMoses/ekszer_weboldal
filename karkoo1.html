@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="karkoto1.css">
 </head>
 <body>
+  <div id="fejlec">
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Trending<span></span></a>
+      <a href="index.html">Karkötők<span></span></a>
+      <a href="index.html">Füllbevalók<span></span></a>
+      <a href="index.html">Gyűrűk</a>
+  </div>
+  <button class="openbtn" onclick="openNav()">&#9776;</button>
+  <h1 id="cím">𝑰𝒄𝒆 𝑲𝒊𝒏𝒈𝒅𝒐𝒎</h1>
+  <img src="icons8-shopping-bag-50.png" class="openbtn2" onclick="openNav2()">&#9776;
+  <div id="mySidepanel2" class="sidepanel2">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+      <a>Kosár</a>
+      <p>A kosarad üres</p>
+  </div>
+  
+  </div>
     <div id="kep">
         <img src="karkoto.webp" alt="">
     </div>
@@ -14,7 +32,7 @@
         <h1>TENNISBOY KARKÖTŐ. - 5 mm</h1>
         <p>15.000 FT</p>
         <form action="/action_page.php">
-            <label for="length">Length:</label>
+            <label id="label" for="length">Length:</label>
             <select name="length" id="length">
               <option value="6.5mm / 1 carat">6.5mm / 1 carat</option>
               <option value="5mm / 0.5 carat">5mm / 0.5 carat</option>
@@ -24,7 +42,7 @@
             
           </form>
           <form action="/action_page.php">
-            <label for="szin">Szín:</label>
+            <label id="label" for="szin">Szín:</label>
             <select name="szin" id="szin">
               <option value="14K Arany">14K Arany</option>
               <option value="14K Ezüst">14K Ezüst</option>
@@ -33,9 +51,74 @@
             <br><br>
             
           </form>
-          <div class="button-container2">
+          <img src="in_stock.PNG" alt="">
+          <div class="button-container2" onclick="changeText()"s>
             <button class="shop-button">Add a kosárhoz</button>
         </div>
     </div>
+
+    <div id="infok">
+      <div id="szallitas">
+          <img src="icons8-truck-50.png" alt="">
+          <h1>ingyenes expressz szállítás</h1>
+      </div>
+      <div id="shield">
+          <img src="icons8-shield-50.png" alt="">
+          <h1>élettartam garancia</h1>
+      </div>
+      <div>
+          <img src="icons8-man-50.png" alt="">
+          <h1>Ezrek bizalma</h1>
+      </div>
+      <div>
+          <img src="icons8-arrow-48.png" alt="">
+          <h1>könnyű visszatérítés, cserék</h1>
+
+      </div>
+      <div id="fizetes">
+          <img src="icons8-money-32.png" alt="">
+          <h1>Ragyogj most! fizess később</h1>
+      </div>
+  </div>
+  <div id="lablec">
+      <h1>Csatlakozz az Ice Kingdom csapatához</h1>
+      <p id="email_cim">E-mail:</p>
+      <input type="text" id="email" name="email"><br><br>
+      <div class="button-container3">
+          <button class="shop-button2" onclick="subscribe()">FELIRATKOZÁS</button>
+      </div>
+      <div id="payment">
+      <img id="payment" src="payment.PNG" alt="">
+      </div>
+  </div>
+
+
+    <script>
+      function openNav() {
+          document.getElementById("mySidepanel").style.width = "100%";
+        }
+       
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+          document.getElementById("mySidepanel").style.width = "0%";
+        }
+  </script>
+  <script>
+      function openNav2() {
+          document.getElementById("mySidepanel2").style.width = "100%";
+        }
+       
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav2() {
+          document.getElementById("mySidepanel2").style.width = "0%";
+        }
+  </script>
+  <script>
+    function changeText() {
+        const pElement = document.querySelector('.sidepanel2 p');
+        pElement.textContent = 'TENNISBOY KARKÖTŐ.-5mm (1db)'; // Szöveg átírása
+        pElement.style.fontSize = '5mm'; // Betűméret módosítása
+    }
+</script>
 </body>
 </html>
